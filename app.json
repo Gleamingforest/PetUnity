@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "jsEngine": "jsc"
+  },
+  "ios": {
+    "bundleIdentifier": "com.ryanguo.pettest"
+  },
+  "android": {
+    "package": "com.ryanguo.pettest"
+  }
+}
