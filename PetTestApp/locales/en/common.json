@@ -1,0 +1,181 @@
+{
+  "common": {
+    "home": {
+      "title": "Home",
+      "hello": "Hello",
+      "monday": "Monday",
+      "may": "May",
+      "years": "years",
+      "male": "Male",
+      "healthy": "Healthy",
+      "healthData": "Health Data",
+      "heartRate": "Heart Rate",
+      "weight": "Weight",
+      "calories": "Calories",
+      "todayTasks": "Today's Tasks",
+      "viewAll": "View All",
+      "takeMedicine": "Take Medicine",
+      "morning": "Morning",
+      "walk": "Walk",
+      "afternoon": "Afternoon",
+      "nextVetAppointment": "Next Vet Appointment",
+      "march": "March",
+      "drZhang": "Dr. Zhang",
+      "annualCheckup": "Annual Checkup",
+      "reschedule": "Reschedule"
+    },
+    "chat": {
+      "title": "Chat",
+      "placeholder": "Type a message...",
+      "lastMessage": "Last message",
+      "noMessages": "No messages yet"
+    },
+    "settings": {
+      "account": "My Devices",
+      "title": "Settings",
+      "general": "General",
+      "notifications": "Notifications",
+      "language": "Language",
+      "language_zh": "简体中文",
+      "language_en": "English",
+      "units": "Units",
+      "units_metric": "Metric (kg, cm)",
+      "units_imperial": "Imperial (lb, in)",
+      "darkMode": "Dark Mode",
+      "darkMode_off": "Off",
+      "darkMode_on": "On",
+      "taskReminders": "Task Reminders",
+      "taskReminders_time": "15 minutes before",
+      "taskRemindersDesc": "Get notified about upcoming pet care tasks",
+      "theme": "Theme",
+      "socialNotifications": "Social Notifications",
+      "socialNotifications_desc": "Likes, comments and messages",
+      "healthAlerts": "Health Alerts",
+      "healthAlerts_desc": "Abnormal health data",
+      "connectedDevices": "Connected Devices",
+      "addDevice": "Add Device",
+      "smartCollar": "Smart Collar",
+      "petCamera": "Pet Camera",
+      "connected": "Connected",
+      "online": "Online",
+      "battery": "Battery",
+      "about": "About",
+      "logout": "Logout",
+      "myDevices": "My Devices",
+      "deviceList": {
+        "gpsCollar": "GPS Collar",
+        "petCamera": "Pet Camera",
+        "feeder": "Smart Feeder"
+      },
+      "deviceStatus": {
+        "working": "Working",
+        "notConnected": "Not Connected"
+      }
+    },
+    "profile": {
+      "title": "My Pets",
+      "addPet": "Add Pet",
+      "basicInfo": "Basic Information",
+      "breed": "Breed",
+      "gender": "Gender",
+      "age": "Age",
+      "weight": "Weight",
+      "microchipId": "Microchip ID",
+      "healthRecords": "Health Records",
+      "add": "Add",
+      "dietInfo": "Diet Information",
+      "dailyFood": "Daily Food",
+      "allergens": "Allergens",
+      "editProfile": "Edit Profile",
+      "changePhoto": "Change Photo",
+      "addPhoto": "Add Photo",
+      "required": "Required",
+      "clickToInput": "Click to input",
+      "save": "Save",
+      "cancel": "Cancel",
+      "heartRate": "Heart Rate",
+      "calories": "Calories",
+      "vetVisit": "Vet Visit",
+      "nextAppointment": "Next Appointment",
+      "appointmentDate": "March 15, 2024 14:30",
+      "doctorInfo": "Dr. Smith - Pet Hospital",
+      "reschedule": "Reschedule",
+      "name": "Name",
+      "birthDate": "Birth Date",
+      "errors": {
+        "imageError": "Error",
+        "imageErrorDesc": "Failed to select image"
+      },
+      "success": "Success",
+      "updateSuccess": "Pet information updated",
+      "confirm": "OK"
+    },
+    "auth": {
+      "login": "Login",
+      "register": "Register",
+      "email": "Email",
+      "password": "Password",
+      "noAccount": "No account? Click to register",
+      "hasAccount": "Have an account? Click to login",
+      "errors": {
+        "invalidEmail": "Invalid email format",
+        "userNotFound": "Account does not exist",
+        "wrongPassword": "Wrong password",
+        "emailInUse": "Email already in use",
+        "weakPassword": "Password too weak, use at least 6 characters",
+        "networkError": "Network connection failed, check your settings",
+        "tooManyRequests": "Too many attempts, try again later",
+        "unknownError": "An unknown error occurred"
+      }
+    },
+    "welcome": {
+      "welcome": "Hello",
+      "enterMainMenu": "Enter Main Menu",
+      "logout": "Logout"
+    },
+    "tasks": {
+      "title": "Tasks",
+      "addTask": "Add Task",
+      "noTasks": "No tasks",
+      "completed": "Completed",
+      "pending": "Pending",
+      "todayTasks": "Today's Tasks",
+      "viewAll": "View All"
+    },
+    "social": {
+      "title": "Social",
+      "feed": "Feed",
+      "messages": "Messages",
+      "friends": "Friends",
+      "activity": "Activity",
+      "nearbyPets": "Nearby Pets",
+      "search": "Search",
+      "tab": {
+        "activity": "Activity",
+        "nearby": "Nearby",
+        "events": "Events"
+      }
+    },
+    "match": {
+      "title": "Match",
+      "years": "years",
+      "noMoreCards": "No more cards to show"
+    },
+    "virtualPet": {
+      "title": "Virtual Pet",
+      "subtitle": "Interact with your 3D pet",
+      "selectPetType": "Select Pet Type",
+      "interactions": "Interactions",
+      "petMood": "Pet Mood",
+      "petStats": "Pet Stats",
+      "happiness": "Happiness",
+      "energy": "Energy",
+      "intelligence": "Intelligence",
+      "unityPlaceholder": "Unity 3D Pet Viewer",
+      "unityIntegration": "(React Unity integration will be added here)"
+    },
+    "notifications": {
+      "systemNotification": "System Notifications"
+    }
+  }
+} 

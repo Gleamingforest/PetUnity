@@ -1,0 +1,181 @@
+{
+  "common": {
+    "home": {
+      "title": "首页",
+      "hello": "你好",
+      "monday": "星期一",
+      "may": "五月",
+      "years": "岁",
+      "male": "公",
+      "healthy": "健康",
+      "healthData": "健康数据",
+      "heartRate": "心率",
+      "weight": "体重",
+      "calories": "卡路里",
+      "todayTasks": "今日任务",
+      "viewAll": "查看全部",
+      "takeMedicine": "服用驱虫药",
+      "morning": "上午",
+      "walk": "散步",
+      "afternoon": "下午",
+      "nextVetAppointment": "下次兽医预约",
+      "march": "年3月",
+      "drZhang": "张医生",
+      "annualCheckup": "年度体检",
+      "reschedule": "重新安排"
+    },
+    "chat": {
+      "title": "聊天",
+      "placeholder": "输入消息...",
+      "lastMessage": "最后一条消息",
+      "noMessages": "暂无消息"
+    },
+    "settings": {
+      "account": "我的设备",
+      "title": "设置",
+      "general": "通用",
+      "notifications": "通知",
+      "language": "语言",
+      "language_zh": "简体中文",
+      "language_en": "English",
+      "units": "单位",
+      "units_metric": "公制 (kg, cm)",
+      "units_imperial": "英制 (lb, in)",
+      "darkMode": "夜间模式",
+      "darkMode_off": "关闭",
+      "darkMode_on": "开启",
+      "taskReminders": "任务提醒",
+      "taskReminders_time": "提前15分钟",
+      "taskRemindersDesc": "获取宠物护理任务的提醒",
+      "theme": "主题",
+      "socialNotifications": "社交通知",
+      "socialNotifications_desc": "点赞、评论和消息",
+      "healthAlerts": "健康提醒",
+      "healthAlerts_desc": "异常健康数据",
+      "connectedDevices": "已连接设备",
+      "addDevice": "添加设备",
+      "smartCollar": "智能项圈",
+      "petCamera": "宠物摄像头",
+      "connected": "已连接",
+      "online": "在线",
+      "battery": "电量",
+      "about": "关于",
+      "logout": "退出登录",
+      "myDevices": "我的设备",
+      "deviceList": {
+        "gpsCollar": "GPS项圈",
+        "petCamera": "宠物摄像头",
+        "feeder": "智能喂食器"
+      },
+      "deviceStatus": {
+        "working": "工作中",
+        "notConnected": "未连接"
+      }
+    },
+    "profile": {
+      "title": "我的宠物",
+      "addPet": "添加宠物",
+      "basicInfo": "基本信息",
+      "breed": "品种",
+      "gender": "性别",
+      "age": "年龄",
+      "weight": "体重",
+      "microchipId": "芯片号",
+      "healthRecords": "健康记录",
+      "add": "添加",
+      "dietInfo": "饮食信息",
+      "dailyFood": "每日食物",
+      "allergens": "过敏源",
+      "editProfile": "编辑资料",
+      "changePhoto": "更换照片",
+      "addPhoto": "添加照片",
+      "required": "必填项",
+      "clickToInput": "点击输入",
+      "save": "保存",
+      "cancel": "取消",
+      "heartRate": "心率",
+      "calories": "卡路里",
+      "vetVisit": "兽医预约",
+      "nextAppointment": "下次预约",
+      "appointmentDate": "2024年3月15日 14:30",
+      "doctorInfo": "张医生 - 宠物医院",
+      "reschedule": "重新预约",
+      "name": "名字",
+      "birthDate": "出生日期",
+      "errors": {
+        "imageError": "错误",
+        "imageErrorDesc": "选择图片失败"
+      },
+      "success": "成功",
+      "updateSuccess": "宠物信息已更新",
+      "confirm": "确定"
+    },
+    "auth": {
+      "login": "登录",
+      "register": "注册",
+      "email": "邮箱",
+      "password": "密码",
+      "noAccount": "没有账号？点击注册",
+      "hasAccount": "已有账号？点击登录",
+      "errors": {
+        "invalidEmail": "邮箱格式不正确",
+        "userNotFound": "该账号不存在",
+        "wrongPassword": "密码错误",
+        "emailInUse": "该邮箱已被注册",
+        "weakPassword": "密码强度太弱，请使用至少6位字符",
+        "networkError": "网络连接失败，请检查网络设置",
+        "tooManyRequests": "尝试次数过多，请稍后再试",
+        "unknownError": "发生未知错误"
+      }
+    },
+    "welcome": {
+      "welcome": "Hello",
+      "enterMainMenu": "进入主菜单",
+      "logout": "退出登录"
+    },
+    "tasks": {
+      "title": "任务",
+      "addTask": "添加任务",
+      "noTasks": "暂无任务",
+      "completed": "已完成",
+      "pending": "待完成",
+      "todayTasks": "今日任务",
+      "viewAll": "查看全部"
+    },
+    "social": {
+      "title": "社交",
+      "feed": "动态",
+      "messages": "消息",
+      "friends": "好友",
+      "activity": "动态",
+      "nearbyPets": "附近的宠物",
+      "search": "搜索",
+      "tab": {
+        "activity": "动态",
+        "nearby": "附近",
+        "events": "活动"
+      }
+    },
+    "match": {
+      "title": "匹配",
+      "years": "岁",
+      "noMoreCards": "没有更多卡片了"
+    },
+    "virtualPet": {
+      "title": "虚拟宠物",
+      "subtitle": "与你的3D宠物互动",
+      "selectPetType": "选择宠物类型",
+      "interactions": "互动选项",
+      "petMood": "宠物心情",
+      "petStats": "宠物状态",
+      "happiness": "快乐度",
+      "energy": "精力",
+      "intelligence": "智力",
+      "unityPlaceholder": "Unity 3D宠物查看器",
+      "unityIntegration": "(React Unity集成将在此处添加)"
+    },
+    "notifications": {
+      "systemNotification": "系统通知"
+    }
+  }
+} 
