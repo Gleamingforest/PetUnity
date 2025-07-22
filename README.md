@@ -37,7 +37,7 @@
 1. **克隆项目**
    ```bash
    git clone https://github.com/Gleamingforest/PetUnity.git
-   cd PetUnity
+   cd PetUnity/PetTestApp
    ```
 
 2. **安装依赖**
@@ -48,7 +48,7 @@
 3. **配置Firebase**
    - 在Firebase控制台创建项目
    - 下载配置文件并重命名为`firebase.ts`
-   - 放置在项目根目录
+   - 放置在`PetTestApp`目录
 
 4. **运行项目**
    ```bash
@@ -73,10 +73,11 @@ PetUnity/
 │   ├── constants/       # 常量定义
 │   ├── navigation/      # 导航配置
 │   ├── assets/          # 静态资源
-│   └── locales/         # 国际化文件
-├── ios/                 # iOS原生代码
-├── android/             # Android原生代码
-└── docs/               # 文档
+│   ├── locales/         # 国际化文件
+│   ├── ios/             # iOS原生代码
+│   └── android/         # Android原生代码
+├── README.md            # 项目说明文档
+└── .gitignore          # Git忽略文件
 ```
 
 ## 🔧 配置说明
