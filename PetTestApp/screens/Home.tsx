@@ -5,30 +5,30 @@ import { styles, colors } from '../constants/Styles';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useTheme } from '../contexts/ThemeContext';
 import { useNavigation } from '@react-navigation/native';
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
-
-type RootStackParamList = {
-  Tasks: undefined;
-  Profile: undefined;
-  PetProfile: undefined;
-};
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 type RootTabParamList = {
   Home: undefined;
   VirtualPet: undefined;
+  AddPost: undefined;
   Social: undefined;
   Profile: undefined;
 };
 
-type HomeScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'Tasks'>;
+type RootStackParamList = {
+  PetProfile: undefined;
+  Tasks: undefined;
+};
+
 type HomeScreenTabNavigationProp = BottomTabNavigationProp<RootTabParamList, 'Home'>;
+type HomeScreenStackNavigationProp = NativeStackNavigationProp<RootStackParamList, 'PetProfile'>;
 
 export default function Home() {
   const { t } = useLanguage();
   const { isDarkMode } = useTheme();
-  const navigation = useNavigation<HomeScreenNavigationProp>();
-  const tabNavigation = useNavigation<HomeScreenTabNavigationProp>();
+  const navigation = useNavigation<HomeScreenTabNavigationProp>();
+  const stackNavigation = useNavigation<HomeScreenStackNavigationProp>();
 
   // 宠物信息数组
   const pets = [
@@ -101,7 +101,7 @@ export default function Home() {
       </View>
       <TouchableOpacity 
         style={{ marginLeft: 12, backgroundColor: '#f3f4f6', width: 40, height: 40, borderRadius: 20, alignItems: 'center', justifyContent: 'center' }}
-        onPress={() => navigation.navigate('PetProfile')}
+        onPress={() => stackNavigation.navigate('PetProfile')}
       >
         <FontAwesome5 name="chevron-right" size={18} color={isDarkMode ? colors.gray[400] : colors.gray[500]} />
       </TouchableOpacity>
@@ -119,7 +119,7 @@ export default function Home() {
           {t('common.home.monday')}, 15 {t('common.home.may')}
         </Text>
       </View>
-      <TouchableOpacity style={{ marginRight: 2 }} onPress={() => tabNavigation.navigate('Profile')}>
+      <TouchableOpacity style={{ marginRight: 2 }} onPress={() => navigation.navigate('Profile')}>
         <Image
           source={{ uri: 'https://randomuser.me/api/portraits/men/32.jpg' }}
           style={{ width: 48, height: 48, borderRadius: 24, borderWidth: 2, borderColor: '#fff' }}
@@ -173,7 +173,7 @@ export default function Home() {
         <View style={[styles.card, { backgroundColor: isDarkMode ? colors.gray[800] : colors.white }]}>
           <View style={styles.sectionHeader}>
             <Text style={[styles.sectionTitle, { color: isDarkMode ? colors.white : colors.gray[900] }]}>{t('common.home.todayTasks')}</Text>
-            <TouchableOpacity onPress={() => navigation.navigate('Tasks')}>
+            <TouchableOpacity onPress={() => stackNavigation.navigate('Tasks')}>
               <Text style={styles.sectionLink}>{t('common.home.viewAll')}</Text>
             </TouchableOpacity>
           </View>

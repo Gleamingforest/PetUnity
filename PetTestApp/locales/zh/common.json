@@ -156,6 +156,52 @@
         "events": "活动"
       }
     },
+    "friends": {
+      "title": "我的好友",
+      "tabs": {
+        "myFriends": "我的好友",
+        "addFriend": "添加好友",
+        "friendRequests": "好友请求"
+      },
+      "loading": "加载好友列表...",
+      "noFriends": "暂无好友",
+      "noFriendsDesc": "开始添加好友与他们聊天吧",
+      "noResults": "暂无搜索结果",
+      "noResultsDesc": "试试其他关键词",
+      "noRequests": "暂无好友请求",
+      "noRequestsDesc": "新的好友请求将显示在这里",
+      "searchPlaceholder": "搜索好友",
+      "online": "在线",
+      "offline": "离线",
+      "chat": "聊天",
+      "remove": "删除",
+      "add": "添加",
+      "accept": "接受",
+      "decline": "拒绝",
+      "sendRequest": "发送请求",
+      "requestSent": "已发送请求",
+      "alreadyFriends": "已是好友",
+      "searchHint": "输入邮箱或用户名搜索",
+      "noUsersFound": "没有找到用户",
+      "enterSearchTerm": "输入邮箱或姓名搜索用户",
+      "removeFriendTitle": "删除好友",
+      "removeFriendMessage": "确定要删除这个好友吗？",
+      "cancel": "取消",
+      "confirm": "确认",
+      "friendRemoved": "好友删除成功",
+      "requestAccepted": "好友请求已接受",
+      "requestDeclined": "好友请求已拒绝",
+      "requestSentSuccess": "好友请求发送成功",
+      "wantsToAddYou": "想要添加你为好友",
+      "errors": {
+        "loadFriends": "加载好友列表失败",
+        "searchFailed": "搜索失败",
+        "removeFailed": "删除好友失败",
+        "requestFailed": "发送好友请求失败",
+        "acceptFailed": "接受请求失败",
+        "declineFailed": "拒绝请求失败"
+      }
+    },
     "match": {
       "title": "匹配",
       "years": "岁",
@@ -176,6 +222,16 @@
     },
     "notifications": {
       "systemNotification": "系统通知"
+    },
+    "aiChat": {
+      "title": "AI 宠物助手",
+      "welcome": "你好！我是你的宠物护理助手 🐾 有什么可以帮助你的吗？",
+      "placeholder": "询问你的宠物问题...",
+      "loading": "AI 正在思考...",
+      "error": "错误",
+      "errorMessage": "发送消息失败，请稍后重试",
+      "sendButton": "发送",
+      "thinking": "AI 正在思考..."
     }
   }
 } 

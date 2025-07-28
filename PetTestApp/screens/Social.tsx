@@ -10,12 +10,16 @@ import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import CustomTabBar from '../components/CustomTabBar';
 import CustomHeader from '../components/CustomHeader';
+import { testFirebaseConnection } from '../testFirebase';
+import { debugFirebaseData } from '../debugFirebase';
+import { cleanupFriends } from '../cleanupFriends';
 
 type RootStackParamList = {
-  ChatList: undefined;
+  FriendsList: undefined;
+  AIChat: undefined;
 };
 
-type SocialScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'ChatList'>;
+type SocialScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'FriendsList'>;
 
 interface Post {
   id: number;
@@ -88,6 +92,17 @@ export default function Social() {
 
   // 添加加载状态
   const [isLoading, setIsLoading] = useState(false);
+
+  // 测试Firebase连接
+  React.useEffect(() => {
+    testFirebaseConnection();
+    // 调试Firebase数据
+    setTimeout(() => {
+      debugFirebaseData();
+      // 清理错误的好友数据
+      cleanupFriends();
+    }, 2000);
+  }, []);
 
   // 模拟加载更多数据
   const loadMorePosts = () => {
@@ -351,6 +366,8 @@ export default function Social() {
   const renderHeader = () => (
     <View style={{ position: 'relative' }}>
       {renderTabController()}
+      
+
     </View>
   );
 
@@ -423,7 +440,25 @@ export default function Social() {
   return (
     <SafeAreaView style={[styles.safeAreaContainer, { backgroundColor: isDarkMode ? colors.gray[900] : colors.white }]}>
       <StatusBar barStyle={isDarkMode ? "light-content" : "dark-content"} />
-      <CustomHeader title={t('common.social.title')} />
+      <CustomHeader 
+        title={t('common.social.title')} 
+        rightContent={
+          <View style={{ flexDirection: 'row', gap: 12 }}>
+            <TouchableOpacity
+              style={styles.headerButton}
+              onPress={() => navigation.navigate('AIChat')}
+            >
+              <FontAwesome5 name="robot" size={20} color={colors.primary} />
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.headerButton}
+              onPress={() => navigation.navigate('FriendsList')}
+            >
+              <FontAwesome5 name="comments" size={20} color={colors.primary} />
+            </TouchableOpacity>
+          </View>
+        }
+      />
       {renderHeader()}
       {activeTab === 0 && (
         <FlatList
@@ -455,27 +490,48 @@ export default function Social() {
           {renderEventsSection()}
         </ScrollView>
       )}
-      {/* 悬浮按钮 */}
-      <TouchableOpacity
-        style={{
-          position: 'absolute',
-          bottom: 104,
-          right: 16,
-          width: 56,
-          height: 56,
-          borderRadius: 28,
-          backgroundColor: colors.primary,
-          alignItems: 'center',
-          justifyContent: 'center',
-          elevation: 4,
-          shadowColor: '#000',
-          shadowOffset: { width: 0, height: 2 },
-          shadowOpacity: 0.2,
-          shadowRadius: 4,
-        }}
-      >
-        <FontAwesome name="plus" size={20} color={colors.white} />
-      </TouchableOpacity>
+
     </SafeAreaView>
   );
-} 
+}
+
+// 添加聊天功能相关样式
+const chatStyles = StyleSheet.create({
+  chatSection: {
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: colors.gray[200],
+  },
+  chatButtonsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    gap: 12,
+  },
+  chatButton: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    borderRadius: 12,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  chatButtonText: {
+    marginLeft: 8,
+    fontSize: 14,
+    fontWeight: '600',
+  },
+  headerButton: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+}); 

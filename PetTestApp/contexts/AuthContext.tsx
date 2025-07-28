@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { auth } from '../firebase';
 import { onAuthStateChanged, User as FirebaseUser } from 'firebase/auth';
+import { friendService } from '../services/FriendService';
 
 interface User {
   id: string;
@@ -28,13 +29,27 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser: FirebaseUser | null) => {
       if (firebaseUser) {
         // 用户已登录
-        setUser({
+        const userData = {
           id: firebaseUser.uid,
           name: firebaseUser.displayName || 'User',
           email: firebaseUser.email || '',
           phone: firebaseUser.phoneNumber || undefined,
           image: firebaseUser.photoURL || undefined
-        });
+        };
+        
+        setUser(userData);
+        
+        // 自动创建或更新用户资料到 Realtime Database
+        try {
+          // 使用安全更新方法，避免覆盖好友数据
+          await friendService.safeUpdateUserProfile({
+            name: userData.name,
+            email: userData.email,
+            avatar: userData.image
+          });
+        } catch (error) {
+          console.error('Failed to create/update user profile:', error);
+        }
       } else {
         // 用户未登录
         setUser(null);

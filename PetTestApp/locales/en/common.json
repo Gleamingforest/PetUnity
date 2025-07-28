@@ -156,6 +156,52 @@
         "events": "Events"
       }
     },
+    "friends": {
+      "title": "My Friends",
+      "tabs": {
+        "myFriends": "My Friends",
+        "addFriend": "Add Friend",
+        "friendRequests": "Requests"
+      },
+      "loading": "Loading friends list...",
+      "noFriends": "No friends yet",
+      "noFriendsDesc": "Start adding friends to chat with them",
+      "noResults": "No search results",
+      "noResultsDesc": "Try searching with different keywords",
+      "noRequests": "No friend requests",
+      "noRequestsDesc": "You will see new friend requests here",
+      "searchPlaceholder": "Search friends",
+      "online": "Online",
+      "offline": "Offline",
+      "chat": "Chat",
+      "remove": "Remove",
+      "add": "Add",
+      "accept": "Accept",
+      "decline": "Decline",
+      "sendRequest": "Send Request",
+      "requestSent": "Request Sent",
+      "alreadyFriends": "Already Friends",
+      "searchHint": "Enter email or username to search",
+      "noUsersFound": "No users found",
+      "enterSearchTerm": "Enter email or name to search users",
+      "removeFriendTitle": "Remove Friend",
+      "removeFriendMessage": "Are you sure you want to remove this friend?",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "friendRemoved": "Friend removed successfully",
+      "requestAccepted": "Friend request accepted",
+      "requestDeclined": "Friend request declined",
+      "requestSentSuccess": "Friend request sent successfully",
+      "wantsToAddYou": "wants to add you as a friend",
+      "errors": {
+        "loadFriends": "Failed to load friends list",
+        "searchFailed": "Search failed",
+        "removeFailed": "Failed to remove friend",
+        "requestFailed": "Failed to send friend request",
+        "acceptFailed": "Failed to accept request",
+        "declineFailed": "Failed to decline request"
+      }
+    },
     "match": {
       "title": "Match",
       "years": "years",
@@ -176,6 +222,16 @@
     },
     "notifications": {
       "systemNotification": "System Notifications"
+    },
+    "aiChat": {
+      "title": "AI Pet Assistant",
+      "welcome": "Hello! I'm your pet care assistant 🐾 How can I help you?",
+      "placeholder": "Ask about your pet...",
+      "loading": "AI is thinking...",
+      "error": "Error",
+      "errorMessage": "Failed to send message, please try again later",
+      "sendButton": "Send",
+      "thinking": "AI is thinking..."
     }
   }
 } 
